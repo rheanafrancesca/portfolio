@@ -64,8 +64,9 @@ nav li a {
     font-family:"Inter", serif;
 }
 
-nav a.active {
-    background-color:blue;
+nav li a.active {
+    border-bottom: 2px solid #f2b6f1;
+    padding-bottom:6px;
 }
 
 nav li a:hover {
@@ -73,6 +74,9 @@ nav li a:hover {
     color: transparent;
     background-size:100%;
     background-clip: text;
-    transition: 0.3s;
+    transition: 0.5s;
     font-weight:700;
+    border-bottom: 2px solid #8781de;
+    padding-bottom:6px;
+    border-bottom-width:5px;
 }
