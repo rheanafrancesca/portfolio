@@ -64,6 +64,10 @@ nav li a {
     font-family:"Inter", serif;
 }
 
+nav li a.active {
+    background-color:blue;
+}
+
 nav li a:hover {
     background-image: linear-gradient(90deg, #8781de, #78a1e3);
     color: transparent;
