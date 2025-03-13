@@ -41,4 +41,4 @@ jobs:
           npm install stylelint stylelint-config-standard --save-dev
       
       - name: Lint CSS
-        run: stylelint "**/*.css" --fix
+        run: stylelint "**/*.css"
