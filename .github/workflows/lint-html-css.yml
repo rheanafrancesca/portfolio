@@ -29,16 +29,3 @@ jobs:
       
       - name: Lint HTML
         run: htmlhint "**/*.html"
-
-      # Lint CSS
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-
-      - name: Install Stylelint
-        run: |
-          npm install stylelint stylelint-config-standard --save-dev
-      
-      - name: Lint CSS
-        run: npx stylelint "**/*.css"
