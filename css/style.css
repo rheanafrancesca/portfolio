@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 .inter-regular {
     font-family: "Inter", serif;
@@ -8,60 +10,72 @@
     font-style: normal;
   }
 
-.libre-baskerville-regular {
-    font-family: "Libre Baskerville", serif;
+.manrope-regular {
+font-family: "Manrope", serif;
+font-optical-sizing: auto;
+font-weight: 200;
+font-style: normal;
+}
+
+  .playfair-regular {
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+.caveat-regular {
+    font-family: "Caveat", serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
   }
-  
-  .libre-baskerville-regular-italic {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
+
+body {
+    margin: 0;
+}
 
 nav {
     border-bottom: 2px solid transparent;
     border-image: linear-gradient(0.25turn, #f2b6f1, #e9f2b6, #78a1e3);
     border-image-slice: 1;
-    background-color:white;
     width: 100%;
-    position: fixed;
+    display:flex;
     top: 0;
     left: 0;
     z-index: 99;
 }
 
 nav .logo {
-    padding: 3rem 4rem;
-    float: left;
+    margin-right:auto;
+    padding:3em 3em;
 }
 
 nav .logo a{
-    font-family: "Libre Baskerville", serif;
-    font-size: 2rem;
+    font-family: "Playfair", serif;
+    font-size: 2.5rem;
     color:#926FC5;
     text-decoration:none;
 }
 
 nav ul {    
-    padding: 3rem 4rem;
-    display: flex;
-    gap: 1rem;
     list-style: none;
-    justify-content:flex-end;
+    padding:2em 3em;
 }
 
 nav li {
-    width: 5em;
+    width: 6em;
+    padding-top:1em;
     text-align:center;
+    display:inline-block;
 }
 
 nav li a {
     text-decoration:none;
     color:black;
-    font-family:"Inter", serif;
+    font-family:"Manrope", serif;
 }
 
 nav li a.active {
@@ -70,13 +84,58 @@ nav li a.active {
 }
 
 nav li a:hover {
+    /*
     background-image: linear-gradient(90deg, #8781de, #78a1e3);
     color: transparent;
     background-size:100%;
     background-clip: text;
+    */
     transition: 0.5s;
     font-weight:700;
     border-bottom: 2px solid #8781de;
     padding-bottom:6px;
     border-bottom-width:5px;
+}
+
+
+div.container1{
+    background-color: #CBB9E3;
+    width:100%;
+    height:auto;
+    position:fixed;
+    font-family:"Manrope", serif;
+}
+
+div.container1 .content{
+    margin:3em;
+    display:flex;
+    gap:45px;
+}
+
+div.container1 .text {
+    text-align:right;
+    align-self:flex-start;
+    padding-top:75px;
+}
+
+div.container1 h1 {
+    font-family: "Caveat", serif;
+}
+
+div.container1 h2{
+    font-family:"Playfair", serif;
+}
+
+div.container1 h1,h2{
+    display:inline;
+    font-size:6em;
+    color:white;
+
+}
+
+div.container1 img {
+    width:auto;
+    height:500px;
+    margin-right:5em;
+    box-shadow: 20px 20px #e9f2b6;
 }
